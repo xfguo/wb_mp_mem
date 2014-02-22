@@ -119,9 +119,9 @@ begin
         mem_we = 'd0;
 end
 
-assign wbm_adr_arr[0] = wbm0_adr_i[mem_adr_width-1:0];
-assign wbm_adr_arr[1] = wbm1_adr_i[mem_adr_width-1:0];
-assign wbm_adr_arr[2] = wbm2_adr_i[mem_adr_width-1:0];
+assign wbm_adr_arr[0] = wbm0_adr_i[mem_adr_width+2-1:2];
+assign wbm_adr_arr[1] = wbm1_adr_i[mem_adr_width+2-1:2];
+assign wbm_adr_arr[2] = wbm2_adr_i[mem_adr_width+2-1:2];
 
 assign wbm_din_arr[0] = wbm0_dat_i;
 assign wbm_din_arr[1] = wbm1_dat_i;
