@@ -1,3 +1,14 @@
+// Single-Port SRAM Wrapper
+//
+// Try auto generate the SRAM by EDA tools but not use the vendors' primitive.
+//
+// Author: Xiongfei Guo <xfguo@credosemi.com>
+//
+// Support Devices:
+//      * Spartan 6 Block RAM (follow the Xilinx ISE language templete).
+//
+// TODO: support more deivce
+
 module spram_bw_wrapper #(
     parameter
         dw = 32,
